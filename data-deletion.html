@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data deletion - Offline Screen Translate</title>
+  <style>
+    body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding: 1em; line-height: 1.6; max-width: 52rem; margin: 0 auto; }
+  </style>
+</head>
+<body>
+<h1>Offline Screen Translate: data deletion</h1>
+<p>Last updated: 2026-09-27</p>
+<p>GF-Apps provides Offline Screen Translate. This page explains deletion of the installation-bound AI credit record and how to contact GF-Apps about data deletion. The App does not offer registration or sign-in with a name, email address, or password.</p>
+<p><strong>Version and feature availability:</strong> The in-app instructions below apply to versions that support AI credit records and deletion. Older versions may not include those features. You can use the support email below to request deletion of information GF-Apps controls even if the option is absent or you cannot open the App.</p>
+
+<h2>Request deletion without opening the App</h2>
+<p>Email <a href="mailto:GF5Apps5@gmail.com?subject=Offline%20Screen%20Translate%20data%20deletion">GF5Apps5@gmail.com</a> with the subject <strong>Offline Screen Translate data deletion</strong>. Describe the data you want deleted and whether you still have access to the original installation. Do not send passwords, credit credentials, private screen text, or screenshots.</p>
+<p>The AI credit record is anonymous and tied to an installation. An email address alone does not identify that record. If you cannot access the original installation, GF-Apps may be unable to identify or verify ownership of the record; contacting support does not guarantee that it can be recovered or deleted. GF-Apps may need further information to identify data it controls and verify the request.</p>
+
+<h2>Delete AI credits and data in the App</h2>
+<ol>
+  <li>Open Offline Screen Translate on the device with the existing AI credit record.</li>
+  <li>Open <strong>Settings</strong> and select <strong>Delete AI credits and data</strong>. This option is available when the feature is enabled and an installation credit record exists.</li>
+  <li>Read the confirmation and confirm deletion. An internet connection is required.</li>
+  <li>Wait for the App to report success. If it reports an error, the deletion has not been confirmed; retry or contact GF-Apps.</li>
+</ol>
+<p>After a successful authenticated request, the backend balance, translation-credit ledger, and detailed rewarded-ad history are deleted. The App clears its active credit credential and cached credit and daily-ad totals, and turns off AI Translation. Unused credits cannot be restored. Uninstalling the App or changing devices does not send this deletion request.</p>
+
+<h2>Data retained and retention periods</h2>
+<p>To prevent deletion from resetting the daily ad limit, the backend retains a minimal record containing the anonymous installation identifier, credential hash, UTC date, number of completed ads that day, and expiry. Cleanup is scheduled for the next UTC day if the record remains deleted. Midnight UTC is 03:00 in Turkey.</p>
+<p>The App keeps an encrypted quota-verification credential on the device, excluded from Android backup, for restarting with zero credits and the same day's ad count. This device credential has no independent automatic expiry; it is cleared when re-enrollment confirms that the backend quota record is missing.</p>
+<p>If you restart the credit record before the daily record expires, that day's completed-ad count is carried forward. Active credit and rewarded-ad records have no automatic expiry and remain until you delete the record or the service is discontinued and its records removed.</p>
+
+<h2>Scope and other providers</h2>
+<p>The in-app deletion action concerns the installation's AI credit record. It does not itself delete local translation settings or information held by Firebase, AdMob, OpenAI, or hosting providers. Those providers apply their own retention rules. GF-Apps does not retain raw translation text or results in its credit ledger or application usage logs.</p>
+<p>For questions or deletion requests concerning information GF-Apps controls, use the email link above. See the <a href="privacy-policy.html">Privacy Policy</a> for the App's broader data practices.</p>
+</body>
+</html>
