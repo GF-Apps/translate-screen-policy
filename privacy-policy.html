@@ -1,93 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset='utf-8'>
-  <meta name='viewport' content='width=device-width'>
-  <title>Privacy Policy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy - Offline Screen Translate</title>
   <style>
-    body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding:1em; line-height:1.6; }
+    body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding: 1em; line-height: 1.6; max-width: 52rem; margin: 0 auto; }
   </style>
 </head>
 <body>
-
 <h2>Privacy Policy</h2>
-
-<p>This Privacy Policy applies to the Offline Screen Translate mobile application (hereinafter referred to as the "Application") developed by GF-Apps (hereinafter referred to as the "Service Provider").</p>
-
-<p>The Application is provided as a Free service and is intended for use "AS IS".</p>
-
-<h3>1. No Personal Data Collection</h3>
-
-<p>The Application does not collect, store, transmit, sell, or share any personal data or user content.</p>
-
-<p>The Application does not require account registration and does not use analytics, tracking technologies, or advertising identifiers.</p>
-
-<h3>2. Accessibility & Overlay Permissions</h3>
-
-<p>The Application requires the following permissions to function:</p>
-
-<ul>
-  <li><strong>Accessibility Service Permission</strong> – used solely to detect and read on-screen text for translation purposes.</li>
-  <li><strong>Display Over Other Apps (Overlay) Permission</strong> – used to display translated text visually over other applications.</li>
-</ul>
-
-<p>The Accessibility Service is strictly used to analyze visible on-screen text in order to provide translation functionality.</p>
-
-<p>No text, content, or personal data accessed through Accessibility is stored, recorded, transmitted, or shared.</p>
-
-<p>Users may enable or disable these permissions at any time via device settings. If disabled, translation features will not function.</p>
-
-<h3>3. On-Device Processing (Google ML Kit)</h3>
-
-<p>The Application uses Google ML Kit for text recognition and translation.</p>
-
-<p>All text recognition and translation processes occur locally on the user's device (offline).</p>
-
-<p>The Application does not send recognized text or translated content to external servers.</p>
-
-<p>An internet connection may be required only for downloading language models. Once downloaded, translation works offline.</p>
-
-<h3>4. Internet Usage</h3>
-
-<p>The Application may temporarily access the internet solely for downloading language models required for offline translation.</p>
-
-<p>No user content is transmitted during translation.</p>
-
-<h3>5. Location Information</h3>
-
-<p>The Application does not collect precise or approximate location information.</p>
-
-<h3>6. Third-Party Services</h3>
-
-<p>The Application does not use third-party analytics, advertising, or tracking services.</p>
-
-<p>The Application may rely on Google Play Services for essential app distribution and functionality. You may review Google's Privacy Policy here:</p>
-
-<ul>
-<li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
-</ul>
-
-<h3>7. Children's Privacy</h3>
-
-<p>The Application does not knowingly collect personal information from children under the age of 13.</p>
-
-<p>Since no personal data is collected, there is minimal risk to children's privacy.</p>
-
-<h3>8. Data Security</h3>
-
-<p>Because the Application does not collect or store personal data, there is no database of user information that could be accessed or breached.</p>
-
-<h3>9. Changes to This Privacy Policy</h3>
-
-<p>This Privacy Policy may be updated from time to time. Any updates will be posted on this page with a revised effective date.</p>
-
-<p>Effective Date: 2026-02-20</p>
-
-<h3>10. Contact</h3>
-
-<p>If you have any questions regarding this Privacy Policy, please contact:</p>
-
-<p>Email: GF5Apps5@gmail.com</p>
-
+<p>Effective date: [publication date]</p>
+<p>GF-Apps provides Offline Screen Translate (the &quot;App&quot;). This policy explains how the App handles information for on-device translation, optional AI Translation, and optional rewarded ads. Contact us at GF5Apps5@gmail.com.</p>
+<h3>Screen access and translation</h3>
+<p>With your permission, the App uses Android Accessibility Service and screen capture to detect text on your screen for translation, including text displayed in other apps. It uses an overlay to show the result. Input Translation can replace text in an input field when you request it. You can turn off these permissions in Android settings.</p>
+<p>On Android 11 and later, screen capture and the floating translation overlay use the Accessibility Service. On Android 8–10, screen capture also uses Android's screen-sharing consent flow. The current normal overlay flow does not require a separate display-over-other-apps permission.</p>
+<p>Text recognition and offline translation run on your device. Downloading language models may require an internet connection. When AI Translation is off, recognized screen text is not sent to GF-Apps' AI translation backend. The App does not send screenshots to that backend.</p>
+<p>When you enable AI Translation and request a translation, the App sends the text to translate, source and target languages, and the selected translation profile to GF-Apps' backend. The backend sends the translation request to OpenAI and returns the result to the App. Text from another app can contain personal or sensitive information. You can turn AI Translation off and use the on-device mode instead.</p>
+<p>The backend processes translation text to complete the request. It does not put the raw text or translation in the credit ledger or its application usage logs. It logs operational metadata such as the model, request outcome, timing, character and token counts, and credit use. GF-Apps configures the OpenAI Responses API with <code>store: false</code>. OpenAI may still retain API content and metadata for limited purposes under its own <a href="https://developers.openai.com/api/docs/guides/your-data" rel="noopener noreferrer">API data controls</a>.</p>
+<h3>AI credits and rewarded ads</h3>
+<p>AI Translation uses an anonymous credit record tied to this installation. The App does not ask for a name, email address, or password to create it. An account identifier and device-protected credential are used to authenticate credit balance, charges, rewarded-ad progress, and limits. The credential is stored on the device and excluded from Android backup; the credit record is stored on GF-Apps' backend. Reinstalling the App or changing devices can make the remaining credits inaccessible.</p>
+<p>If you choose to watch a rewarded ad, Google AdMob and its partners may process your IP address, device or app identifiers, ad interactions, and diagnostics to deliver and measure ads and prevent fraud. Google's User Messaging Platform handles ad privacy choices where required. GF-Apps receives a signed ad-verification callback with an ad transaction identifier and reward information to grant credits and prevent duplicate grants. The App removes the Android advertising ID permissions from its manifest; Google's SDK may use other identifiers.</p>
+<h3>Analytics, crash reports, and app integrity</h3>
+<p>Firebase Analytics records feature-use events, including chosen languages, translation mode, and OCR engine. Firebase Crashlytics receives crash reports, stack traces, device and app information, and diagnostic logs. GF-Apps does not intentionally attach screen text, screenshots, or translations to its own telemetry events. The Firebase SDKs may collect installation identifiers and other data described in <a href="https://firebase.google.com/docs/android/play-data-disclosure" rel="noopener noreferrer">Firebase's Android disclosure</a>.</p>
+<p>The AI-enabled App uses Firebase App Check with Play Integrity to protect the backend from abuse. These services process app and device integrity information. Hosting and network providers, including Cloudflare, may process connection information such as IP addresses to deliver and secure requests.</p>
+<h3>Purposes, recipients, and security</h3>
+<p>GF-Apps uses this information to provide translations and credits, serve optional rewarded ads, measure reliability, and prevent abuse. Relevant recipients are OpenAI for AI translation; Google and its ad partners for ads, analytics, crash reporting, and app integrity; and Cloudflare for backend hosting. GF-Apps does not sell recognized screen text. Requests to the backend use HTTPS.</p>
+<h3 id="data-deletion">Retention and deletion</h3>
+<p><a href="data-deletion.html">Data deletion instructions and support requests</a> explain how to request deletion, the data deleted, and the limited records retained.</p>
+<p>GF-Apps does not retain raw translation text in its credit ledger or application usage logs. Active anonymous credit and rewarded-ad transaction records have no automatic expiry. We keep them until you delete the credit record, or until we discontinue the service and remove its records. The limited daily-ad record retained after deletion is described below. Other providers apply their own retention rules to the information they process.</p>
+<p>To delete this installation's credit record, open <strong>Settings → Delete AI credits and data</strong> in the AI-enabled App and confirm. This permanently deletes the backend balance, translation-credit ledger, and detailed rewarded-ad history for that installation, clears the active device credential and cached totals, and turns off AI Translation. Unused credits cannot be restored. You can later start again with zero credits. Uninstalling the App or changing devices does not send a deletion request; delete the record in Settings before doing so.</p>
+<p>Deletion does not grant additional daily ad opportunities. To prevent the daily limit from being reset, the backend retains a minimal record containing the anonymous installation identifier, credential hash, UTC date, number of completed ads that day, and expiry. Cleanup is scheduled for the next UTC day if you do not restart the credit record. If you restart, that day's count is carried forward and the active record follows the retention rules above. The App also keeps an encrypted quota-verification credential on the device for this restart flow; it is excluded from Android backup and is cleared when re-enrollment confirms that the backend quota record is missing. This deletion option does not itself delete information held by Firebase, AdMob, OpenAI, or hosting providers.</p>
+<p>You can contact <a href="mailto:GF5Apps5@gmail.com?subject=Offline%20Screen%20Translate%20data%20deletion">GF5Apps5@gmail.com</a> about data GF-Apps controls. Do not email your credit credential, private screen text, or screenshots. The credit record is anonymous and installation-bound, so an email address alone does not identify it.</p>
+<h3>Children and teens</h3>
+<p>The App's declared target audience on Google Play is ages 13–15, 16–17, and 18 and over. It is not designed for children under 13. Teens who use the App are subject to the data practices described above, including optional AI Translation and rewarded ads. If you believe a child under 13 has used the App or you have a question about a teen's information, contact GF5Apps5@gmail.com.</p>
+<h3>Changes and contact</h3>
+<p>GF-Apps may update this policy and will post the new effective date here. For privacy questions, email GF5Apps5@gmail.com.</p>
 </body>
 </html>
