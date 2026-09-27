@@ -28,7 +28,7 @@
 <p>After a successful authenticated request, the backend balance, translation-credit ledger, and detailed rewarded-ad history are deleted. The App clears its active credit credential and cached credit and daily-ad totals, and turns off AI Translation. Unused credits cannot be restored. Uninstalling the App or changing devices does not send this deletion request.</p>
 
 <h2>Data retained and retention periods</h2>
-<p>To prevent deletion from resetting the daily ad limit, the backend retains a minimal record containing the anonymous installation identifier, credential hash, UTC date, number of completed ads that day, and expiry. Cleanup is scheduled for the next UTC day if the record remains deleted. Midnight UTC is 03:00 in Turkey.</p>
+<p>To prevent deletion from resetting the daily ad limit, the backend retains a minimal record containing the anonymous installation identifier, credential hash, UTC date, number of completed ads that day, and expiry. Cleanup is scheduled for the next UTC day if the record remains deleted.</p>
 <p>The App keeps an encrypted quota-verification credential on the device, excluded from Android backup, for restarting with zero credits and the same day's ad count. This device credential has no independent automatic expiry; it is cleared when re-enrollment confirms that the backend quota record is missing.</p>
 <p>If you restart the credit record before the daily record expires, that day's completed-ad count is carried forward. Active credit and rewarded-ad records have no automatic expiry and remain until you delete the record or the service is discontinued and its records removed.</p>
 
